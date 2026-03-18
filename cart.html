@@ -273,7 +273,7 @@
       const total = cart.reduce((sum, i) => sum + i.price * i.qty, 0) + deliveryFee;
 
       if (token) {
-        fetch('http://localhost:3000/api/orders', {
+        fetch('http://campuseats-production-f9d4.up.railway.app/api/orders', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
